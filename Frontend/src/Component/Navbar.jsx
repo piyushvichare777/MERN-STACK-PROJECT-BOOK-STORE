@@ -18,7 +18,7 @@ function Navbar() {
 
   return (
     <>
-    <div className='mx-auto p-5'>
+    <div className=' fixed left-0 right-0 mx-5'>
    <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
