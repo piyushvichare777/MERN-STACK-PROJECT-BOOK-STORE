@@ -1,8 +1,26 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useState } from 'react'
+
 
 function Navbar() {
+  const [sticky, setSticky] = useState(false)
  
+  useEffect(()=>{
+    const handelScroll=()=>{
+    if(window.scrollY>0){
+      setSticky(true)
+    }
+    else{
+      setSticky(false)
+    }
+  
+  }
+  window.addEventListener('scoll',handelScroll)
+  return()=>{
+    window.removeEventListener("scroll",handelScroll)
+  }
+  },[])
   const navitem = (
 
     <>
@@ -13,12 +31,9 @@ function Navbar() {
     </>
   )
   
-
-  
-
   return (
     <>
-    <div className=' fixed left-0 right-0 mx-5'>
+    <div className= {`fixed left-0 right-0 z-50 mx-5 ${sticky ? "sticky-navbar shadow-md bg-base-200 duration-300 transition-all ease-in-out ":""}`}>
    <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">

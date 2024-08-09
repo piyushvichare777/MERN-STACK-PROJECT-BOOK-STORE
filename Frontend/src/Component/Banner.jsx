@@ -4,16 +4,16 @@ import myphoto from '../../public/new book.png'
 function Banner() {
   return (
     <>
-    <div className='  mx-auto ms-8 flex flex-col md:flex-row'  >
+    <div className='  mx-auto ms-8 flex flex-col md:flex-row '  >
     <div className=' order-2 md:order-1 w-full md:w-1/2 mt-12 md:mt-12 mt'  >
 <div className="space-y-12">
      <h1 className='text-4xl font-bold text-white mt-20'>Hello this is my book store  <span className='text-red-300'>Every day is new day</span></h1>
-    <p className='text-xl'>
+    <p className='text-xl '>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, vel quidem recusandae id hic sunt vero similique illo molestiae magni pariatur cupiditate aut rem delectus est dignissimos nihil repudiandae iure.
     </p>
 
 {/* email input */}
-    <label className="input input-bordered flex items-center gap-2   ">
+    <label className="input input-bordered flex items-center gap-2  ">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
@@ -26,7 +26,7 @@ function Banner() {
   </svg>
   <input type="text" className="grow" placeholder="Email" />
 </label>
-<button className="btn mt-6 btn-secondary ">Secondary</button>
+<button className="btn mt-2 btn-secondary ">Secondary</button>
 </div>
    
     </div>

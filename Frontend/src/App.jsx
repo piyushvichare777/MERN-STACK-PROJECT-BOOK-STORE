@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import Navbar from './Component/Navbar'
-import Banner from './Component/Banner'
-import Footer from './Component/Footer'
+import React from "react"
+import Home from "./home/Home"
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-     <Navbar/>
-     <Banner/>
-  <Footer/>
+    <Home/>
+
     </>
   )
 }
